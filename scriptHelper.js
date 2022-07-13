@@ -15,7 +15,7 @@ let list = display.innerHTML += `<ol>
                                </ol>`;
  
 
-function validateInput(testInput) {
+   function validateInput(testInput) {
 
     if ( pilotname[0].value===""){
         display.style.visibility="hidden"
@@ -92,7 +92,7 @@ function validateInput(testInput) {
 
   let url ='https://handlers.education.launchcode.org/static/planets.json'
 
-  async function myFetch() {
+   async function myFetch() {
     let planetsReturned;
     
     planetsReturned = await fetch(url).then( function(response) {
@@ -129,10 +129,8 @@ form.addEventListener("submit", function(e) {
   });
 
 
-window.addEventListener("load", function() {
+  window.addEventListener("load", function() {
  
     myFetch()
 
  });
-
-
